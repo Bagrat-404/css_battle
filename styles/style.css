@@ -7,10 +7,6 @@ body{
     flex-direction: column;
 }
 
-main {
-  height: 64px;
-}
-
 header {
   background-color: #dbeafe;
   display: flex;
@@ -28,18 +24,30 @@ header {
   }
 }
 
+main {
+  width: 100%;
+  border-radius: 8px;
+}
+
 .leyout{
     display: flex;
-    width: 1440px;
     flex-grow: 1;
     min-height: calc(100vh - 160px);
+    
 }
-main {
-
+section.hero {
     background-color:#d1fae5;
     height: 100%;
-    flex-basis: auto;
     
+    border-radius: 8px;
+    
+}
+
+div.hero-content {
+    padding: 32px 16px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 aside {
@@ -102,6 +110,8 @@ section {
 
 footer {
   background-color: #fed7aa;
+  border-radius: 8px;
+  height: 80px;
 }
 
 .logo {
