@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-inline: 24px;
+  } 
 
 header {
   background-color: #dbeafe;
@@ -30,46 +31,47 @@ main {
   border-radius: 8px;
 }
 
-.leyout{
-    display: flex;
-    flex-grow: 1;
-    min-height: calc(100vh - 160px);
-    gap: 24px;
-    
+.leyout {
+  display: flex;
+  flex-grow: 1;
+  min-height: calc(100vh - 208px);
+  gap: 24px;
 }
 section.hero {
-    background-color:#d1fae5;
-    height: 100%;
-    border-radius: 8px;
-    display: flex;
-    padding: 32px 16px;
-
+  background-color: #d1fae5;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  padding: 32px 16px;
 }
 
-
-
 div.hero-content {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    width: 40%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: 40%;
 
-    h1{
-        font-size: 32px;
-        font-weight: 700;
-    }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
 
-  
-    
+  p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  a{
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 aside {
-    width: 280px;
-    background-color: #e9d5ff;
-    padding: 32px 16px;
-    border-radius: 8px;
-    
-  
+  width: 280px;
+  background-color: #e9d5ff;
+  padding: 32px 16px;
+  border-radius: 8px;
 
   h2 {
     font-size: 20px;
@@ -88,7 +90,6 @@ aside {
     font-weight: 500;
   }
 }
-  
 
 /* general tags */
 a {
@@ -111,10 +112,29 @@ nav {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+  font-size: 14px;
+  font-weight: 400;
+
+  ul{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    }
+
+
+
+
+
   span,
   ul > li {
     font-size: 14px;
   }
+
+
 }
 
 section {
@@ -143,10 +163,14 @@ footer {
 }
 
 .big-btn {
-  width:fit-content;
+  width: fit-content;
   display: inline-block;
   background-color: #1656bf;
   color: white;
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px 30px;
+}
+
+img{
+  border-radius: 8px;
 }
