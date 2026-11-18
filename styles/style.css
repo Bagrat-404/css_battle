@@ -5,6 +5,7 @@
 body{
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 
 header {
@@ -33,21 +34,33 @@ main {
     display: flex;
     flex-grow: 1;
     min-height: calc(100vh - 160px);
+    gap: 24px;
     
 }
 section.hero {
     background-color:#d1fae5;
     height: 100%;
-    
     border-radius: 8px;
-    
+    display: flex;
+    padding: 32px 16px;
+
 }
 
+
+
 div.hero-content {
-    padding: 32px 16px;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
     gap: 16px;
+    flex-direction: column;
+    width: 40%;
+
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+  
+    
 }
 
 aside {
@@ -123,6 +136,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1656bf;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.big-btn {
+  width:fit-content;
+  display: inline-block;
   background-color: #1656bf;
   color: white;
   border-radius: 8px;
